@@ -13,6 +13,7 @@ interface AppBarProps extends MuiAppBarProps {
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
 })<AppBarProps>(({ theme, open }) => ({
+  backgroundColor: "green",
   zIndex: theme.zIndex.drawer + 1,
   transition: theme.transitions.create(["width", "margin"], {
     easing: theme.transitions.easing.sharp,
@@ -49,7 +50,7 @@ export const Navibar: React.FC<{
             <MenuIcon />
           </IconButton>
           <Typography variant={"h6"} component={"div"} noWrap marginX={"auto"}>
-            Building 3D Map With AI
+            Building 3D Map
           </Typography>
         </Toolbar>
       </AppBar>

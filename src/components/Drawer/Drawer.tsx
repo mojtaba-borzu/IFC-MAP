@@ -116,7 +116,7 @@ export const DrawerContent: React.FC<{
             <ListItemText primary={"Open File"} />
           </ListItemButton>
         </label>
-        <ListItemButton
+        {/* <ListItemButton
           key={"showPlane"}
           onClick={() => toggleClippingPlanes()}
           selected={isClippingPaneSelected}
@@ -125,8 +125,8 @@ export const DrawerContent: React.FC<{
             <CompareArrowsSharp />
           </ListItemIcon>
           <ListItemText primary={"Clipping Planes"} />
-        </ListItemButton>
-        <ListItemButton
+        </ListItemButton> */}
+        {/* <ListItemButton
           key={"check"}
           onClick={() => props.setIsConfirmationDialogOpen(true)}
         >
@@ -134,17 +134,17 @@ export const DrawerContent: React.FC<{
             <BugReport />
           </ListItemIcon>
           <ListItemText primary={"Building Confirmation"} />
-        </ListItemButton>
-        <ListItemButton key={"preferences"}>
+        </ListItemButton> */}
+        {/* <ListItemButton key={"preferences"}>
           <ListItemIcon>
             <Settings />
           </ListItemIcon>
           <ListItemText primary={"Preferences"} />
-        </ListItemButton>
+        </ListItemButton> */}
       </List>
       <Divider />
       <List>
-        <ListItemButton
+        {/* <ListItemButton
           key={"About"}
           onClick={() => props.setIsHelpDialogOpen(true)}
         >
@@ -152,7 +152,7 @@ export const DrawerContent: React.FC<{
             <HelpOutline />
           </ListItemIcon>
           <ListItemText primary={"About"} />
-        </ListItemButton>
+        </ListItemButton> */}
       </List>
     </Drawer>
   );
