@@ -6,7 +6,5 @@ export default defineConfig({
 
   plugins: [react()],
  
-  define: {
-    "process.env.API_HOST": JSON.stringify(process.env.API_HOST),
-  },
+
 });
